@@ -10,7 +10,7 @@ Of course the Azure File service is a home run for Azure Windows customers, but 
 ##### Setting up the Azure File Service
 
 In order to set up the Azure File Service I need to go the new Azure preview portal found at http://portal.azure.com. once you've made your way to the portal you want to go ahead and click on the New button in the top left, click "Data + Storage", and finally "Storage Account". 
-![Portal Image](/content/images/2015/08/AzurePortal.PNG)
+![Portal Image](/content/azure-files-linux-08082015/AzurePortal.PNG)
 
 Go ahead and assign a name to your storage account, choose your Pricing Tier, Subscription, Location, and Diagnostic settings. For resource group I am going to assign this under the same resource group my Azure Virtual Machines are under, but I can not comment on the exact benefits -- Resource Groups documentation is found [here](https://azure.microsoft.com/en-us/documentation/articles/resource-group-overview/). Once done selecting all these options go ahead and click create. **WABHOOOSHH** because the cloud makes resourcing these objects so easy, I feel adding noises is necessary to add some life to an otherwise boring process.
 
