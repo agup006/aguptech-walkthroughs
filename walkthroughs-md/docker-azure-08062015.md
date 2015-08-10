@@ -55,12 +55,12 @@ Lets grab `mycert.cer` and add the certificate as part of our Management Certifi
 
 Login to the Azure Portal and scroll down to the bottom section on the left hand side and click "SETTINGS"
 
-![SETTINGS](/content/images/docker-azure-08062015/Settings.PNG?raw=true)
+![SETTINGS](/content/docker-azure-08062015/Settings.PNG)
 After clicking SETTINGS click "Management Certificates" at the top and "Upload a the bottom". Choose `mycert.cer` and begin the upload
-![UPLOAD](/content/docker-azure-08062015/Upload.PNG?raw=true)
+![UPLOAD](/content/docker-azure-08062015/Upload.PNG)
 
 Sweet now that we have the cert squared away lets also grab our Azure Subscription ID. The easiest way to do this is to click the Subscriptions Tab in the top right, and copy and paste the GUID.
-![SubscriptionID](/content/docker-azure-08062015/Subscription.PNG?raw=true)
+![SubscriptionID](/content/docker-azure-08062015/Subscription.PNG)
 
 ###### Running Docker Machine to create Azure Docker Swarm
 Now that Docker Machine and Azure are good to go, lets leverage the Azure driver integration to spin up a Docker Swarm running in the Microsoft cloud.
@@ -116,7 +116,7 @@ Lets start out by creating our docker machine swarm master with the following co
 ```
 
 Docker Machine is now talking to Azure to create your beautiful new Swarm Master, this process usually takes a couple minutes. In the mean time if you navigate to the Azure Portal you can watch the Azure VM appear and start running after around 30 seconds
-![SwarmMasterSpinningUp](/content/docker-azure-08062015/SwarmMaster.PNG?raw=true)
+![SwarmMasterSpinningUp](/content/docker-azure-08062015/SwarmMaster.PNG)
 
 Once our docker swarm master is done spinning up, if we issue a `docker-machine ls` we should see our swarm master populated
 
