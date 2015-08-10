@@ -16,15 +16,15 @@ Go ahead and assign a name to your storage account, choose your Pricing Tier, Su
 
 Anyways, by the time you finished trying to comprehend my onomatopoeia your Storage Account is done loaded up and ready for some File Shares. Go ahead and click on "File Shares".
 
-![File Shares](/content/images/2015/08/AzureFileShare.PNG)
+![File Shares](/content/azure-files-linux-08082015/AzureFileShare.PNG)
 
 If you receive a message notifying you of this "Preview Feature not available" you need to enable this feature and spin up a new storage account again.
 
-![Preview](/content/images/2015/08/Preview.PNG)
+![Preview](/content/azure-files-linux-08082015/Preview.PNG)
 
 Under the new "Files" tab click on Add, and give your new FileShare a meaningful name -- you are going to be using the name a bit. After the share comes up make note of the URL the File Share is given. Generally the URL follows this schema http://[StorageAccountName].file.core.windows.net/[file_name]. Lastly click the keys on the storage account in order to retrieve the primary access keys. **Note** I've blurred mine out because I do not trust you.
 
-![Storage Keys](/content/images/2015/08/StorageKeys.PNG)
+![Storage Keys](/content/azure-files-linux-08082015/StorageKeys.PNG)
 
 Lets go ahead and switch back to our Linux Server, and mount the Azure File. First create the directory where the Azure File is going to rest: ``mkdir -p ~/azure/drive``. Lets change into the `azure` directory right above the drive directory.
 
@@ -61,7 +61,7 @@ done
 ```
 
 Here are the results: An average of **8.8488099 seconds** to write 10MB, with a standard deviation of **0.64239296 seconds**. Or a not so great speed of **1.130095 MB/s**
-![AzureWrite](/content/images/2015/08/WriteAzueFileTest.PNG)
+![AzureWrite](/content/azure-files-linux-08082015/WriteAzueFileTest.PNG)
 
 
 ##### Read Speeds
@@ -79,7 +79,7 @@ done
 
 Drumroll please .... Here are the results: An Average of **1.499051 seconds** to read 10MB, with a standard deviation of **.292453 seconds**. Or nicer speed of **6.6708867 MB/s**
 
-![AzureRead](/content/images/2015/08/ReadAzureFileTest.PNG)
+![AzureRead](/content/azure-files-linux-08082015/ReadAzureFileTest.PNG)
 
 Overall, hope you enjoyed this post and now are able to use the Azure Files Service with your Linux Servers. I might try these speedtests again when the Files service is out of preview, and with some of the premium disk options Azure offers, but until then..
 
