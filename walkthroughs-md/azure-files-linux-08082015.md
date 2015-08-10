@@ -73,11 +73,11 @@ In order to test Read speeds I am going to use the following script. This script
 for i in {1..100}
 do
         echo "speedtest$i";
-        dd if=/dev/zero of=./drive/speedtest$i bs=10k count=1000;sync;
+        dd if=/dev/zero of=/root/azure/drive/speedtest$i bs=10k count=1000;sync;
 done
 ```
 
-Drumroll please .... Here are the results: An Average of 1.499051 seconds** to read 10MB, with a standard deviation of **.292453 seconds**. Or nicer speed of **6.6708867 MB/s**
+Drumroll please .... Here are the results: An Average of **1.499051 seconds** to read 10MB, with a standard deviation of **.292453 seconds**. Or nicer speed of **6.6708867 MB/s**
 
 ![AzureRead](/content/images/2015/08/ReadAzureFileTest.PNG)
 
