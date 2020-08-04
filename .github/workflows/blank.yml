@@ -9,7 +9,7 @@ jobs:
       
     - name: Hello world action step
       id: costs
-      uses: agup006/hello-world-javascript-action
+      uses: agup006/hello-world-javascript-action@v2
       with:
         yaml-file: 'a.yml'
 
