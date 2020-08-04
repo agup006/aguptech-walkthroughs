@@ -5,11 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+    - uses: actions/checkout@master
+      
     - name: Hello world action step
-      id: hello
+      id: costs
       uses: agup006/hello-world-javascript-action@v1
       with:
-        who-to-greet: 'Mona the Octocat'
-    # Use the output from the `hello` step
+        yaml-file: 'a.yml'
+
     - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+      run: echo "The cost was ${{ steps.costs.outputs.cost }}"
